@@ -14,6 +14,6 @@ public class GetUserImplement implements GetUser{
 
     @Override
     public List<User> getAll() {
-        return userService.getAllUsers();
+        return (List<User>) userService.getAllUsers();
     }
 }

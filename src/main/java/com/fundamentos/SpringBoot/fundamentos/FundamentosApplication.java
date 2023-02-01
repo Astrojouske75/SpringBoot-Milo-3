@@ -69,7 +69,7 @@ public class FundamentosApplication implements CommandLineRunner {
 		}catch (Exception e){
 			LOGGER.error("esta es una excepcion dentro del metodo transactional " + e);
 		}
-		userService.getAllUsers().stream()
+		userService.getAllUsers()
 				.forEach(user -> LOGGER.info("este es el usuario con el metodo transaccional: " + user));
     }
 
